@@ -13,7 +13,14 @@ namespace lichkin_net_browser
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            if (System.Diagnostics.Process.GetProcessesByName(System.Diagnostics.Process.GetCurrentProcess().ProcessName).Length > 1)
+            {
+                MessageBox.Show("不能同时运行多个程序", "提示信息");
+            }
+            else
+            {
+                Application.Run(new MainForm());
+            }
         }
     }
 }
