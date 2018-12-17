@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="lichkin-net-rsa">
+      <HintPath>..\..\lichkin-net-rsa\lichkin-net-rsa\bin\Debug\lichkin-net-rsa.dll</HintPath>
+    </Reference>
     <Reference Include="lichkin-net-utils">
       <HintPath>..\..\lichkin-net-utils\lichkin-net-utils\bin\Debug\lichkin-net-utils.dll</HintPath>
     </Reference>
